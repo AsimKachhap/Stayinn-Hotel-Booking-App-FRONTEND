@@ -1,13 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  margin: 0 2vw;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.left-sidebar {
+  border-radius: 20px 0 0 20px;
+  animation: leftToRight 3000ms;
+}
+
+.right-sidebar {
+  border-radius: 0 20px 20px 0;
+}
+
+.left-mainArea {
+  border-radius: 0 0 20px 20px;
+}
+
+.right-mainArea {
+  border-radius: 20px 20px 0 0;
+}
+
+.hotelCard {
+  box-shadow: 20px 20px 40px #cccccc, -20px -20px 40px #ffffff;
+}
+
+@keyframes leftToRight {
+  10% {
+    transform: scaleX(1.1);
+  }
+  90% {
+    transform: translateX(800px);
+  }
+  100% {
+    transform: scaleX(1.1);
+    transform: translateX(800px);
+  }
 }
