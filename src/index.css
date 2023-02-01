@@ -6,6 +6,10 @@ body {
   margin: 0 2vw;
 }
 
+hotelCard {
+  box-shadow: 20px 20px 50px #00d2c6, -30px -30px 60px #00ffff;
+}
+
 .left-sidebar {
   border-radius: 20px 0 0 20px;
   animation: leftToRight 3000ms;

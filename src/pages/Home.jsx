@@ -3,9 +3,20 @@ import HotelCard from "../components/HotelCard";
 
 const Home = () => {
   return (
-    <div className=" px-[2vh] ">
+    <div className=" ">
       <div></div>
-      <div>
+      <div className=" grid gap-2 md:grid-cols-3 lg:grid-cols-4 ">
+        <HotelCard />
+        <HotelCard />
+        <HotelCard />
+        <HotelCard />
+        <HotelCard />
+        <HotelCard />
+        <HotelCard />
+        <HotelCard />
+        <HotelCard />
+        <HotelCard />
+        <HotelCard />
         <HotelCard />
       </div>
       <div></div>
