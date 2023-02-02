@@ -1,9 +1,11 @@
 import { React, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { MdLocationOn } from "react-icons/md";
 import { AiOutlineHeart, AiFillHeart } from "react-icons/ai";
 
 const HotelCard = () => {
   const [isLiked, setIsLiked] = useState(false);
+  const navigate = useNavigate();
 
   const hotels = [
     {
@@ -18,8 +20,15 @@ const HotelCard = () => {
   return hotels.map((item) => {
     return (
       <div className=" hotelCard flex flex-col  bg-[#F0F0F0] rounded-lg">
-        <div className="flex-2 w-[vw] max-h-[250px] rounded-lg">
-          <img className="rounded-t-md" src="/images/hotel1.jpg" alt="" />
+        <div
+          className="flex-2 w-[vw] max-h-[250px] rounded-lg  "
+          onClick={() => navigate("/hotel/1")}
+        >
+          <img
+            className="rounded-t-md w-full h-full"
+            src="/images/hotel1.jpg "
+            alt=""
+          />
         </div>
 
         <div className="flex-3 grid grid-rows-2 p-2 gap-4">
